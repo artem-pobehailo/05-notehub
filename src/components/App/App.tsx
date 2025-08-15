@@ -9,7 +9,7 @@ import Modal from "../Modal/Modal";
 import NoteForm from "../NoteForm/NoteForm";
 
 import { fetchNotes } from "../../services/noteService";
-import type { FetchNotesResponse } from "../../types/Note";
+import type { FetchNotesResponse } from "../../types/note";
 import css from "./App.module.css";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
