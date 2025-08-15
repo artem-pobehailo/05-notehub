@@ -1,5 +1,4 @@
 import axios from "axios";
-
 import type { FetchNotesResponse, NewNoteData, Note } from "../types/note";
 
 const BASE_URL = "https://notehub-public.goit.study/api";
