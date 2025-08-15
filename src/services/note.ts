@@ -29,8 +29,6 @@ export const fetchNotes = async (
   }
 
   const response = await api.get<FetchNotesResponse>("/notes", { params });
-  console.log(response.data);
-
   return response.data;
 };
 
