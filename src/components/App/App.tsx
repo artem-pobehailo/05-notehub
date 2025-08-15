@@ -8,12 +8,14 @@ import Pagination from "../Pagination/Pagination";
 import Modal from "../Modal/Modal";
 import NoteForm from "../NoteForm/NoteForm";
 
-import { fetchNotes } from "../../services/noteService";
+import {
+  fetchNotes,
+  type FetchNotesResponse,
+} from "../../services/noteService";
 
 import css from "./App.module.css";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import type { FetchNotesResponse } from "../../types/note";
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
