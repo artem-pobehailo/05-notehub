@@ -55,7 +55,7 @@ export default function App() {
       {isLoading && <Loader />}
       {isError && <ErrorMessage />}
       {notes.length > 0 && <NoteList notes={notes} />}
-
+      {!isLoading && !isError && notes.length === 0 && <p>No notes found</p>}
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
           <NoteForm onSuccess={() => setIsModalOpen(false)} />
